@@ -1,8 +1,3 @@
-/* General */
-body {
-  font-family: 'Inter', sans-serif;
-}
-
 .gradient-background {
   background: linear-gradient(300deg, #5f32d2, #1a1717, #27158384);
   background-size: 180% 180%;
@@ -22,7 +17,6 @@ body {
   }
 }
 
-/* Icons */
 .icon-square {
   background-color: #f8f9fa;
   border-radius: 0.75rem;
@@ -37,7 +31,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Profile Image */
 .profile-img {
   height: 100px;
   width: 100px;
@@ -48,7 +41,6 @@ body {
   border: 3px solid #fff;
 }
 
-/* Logos */
 .logos img {
   width: 150px;
   height: auto;
@@ -61,7 +53,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Cards */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -71,12 +62,10 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Buttons */
 button.btn svg {
   margin-bottom: 4px;
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   h1.display-4 {
     font-size: 2rem;
@@ -89,4 +78,17 @@ button.btn svg {
   .logos img {
     width: 100px;
   }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
