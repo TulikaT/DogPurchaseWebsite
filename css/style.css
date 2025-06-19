@@ -1,7 +1,13 @@
+/* General */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .gradient-background {
   background: linear-gradient(300deg, #5f32d2, #1a1717, #27158384);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+  color: white;
 }
 
 @keyframes gradient-animation {
@@ -16,21 +22,71 @@
   }
 }
 
+/* Icons */
 .icon-square {
-  width: 3rem;
-  height: 3rem;
+  background-color: #f8f9fa;
   border-radius: 0.75rem;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
-.profile-img{
+.icon-square:hover {
+  transform: scale(1.1);
+}
+
+/* Profile Image */
+.profile-img {
   height: 100px;
+  width: 100px;
   border-radius: 50%;
-    margin-top: 45px;
-  margin-bottom: 5px;
-
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
 }
 
-.logos img{
-  width: 180px;
-  height: 35px;
+/* Logos */
+.logos img {
+  width: 150px;
+  height: auto;
+  filter: grayscale(1);
+  transition: 0.3s ease;
+}
+
+.logos img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button.btn svg {
+  margin-bottom: 4px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .logos img {
+    width: 100px;
+  }
 }
